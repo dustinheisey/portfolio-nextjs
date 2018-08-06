@@ -1,0 +1,43 @@
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.05);
+  box-shadow: var(--shadow);
+}
+
+.grow:active {
+  transform: scale(0.9);
+}
+
+.svg {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transition: all 0.25s ease-out;
+}
+
+.svg:hover,
+.svg:focus {
+  width: scale(1.05);
+  height: scale(1.05);
+  box-shadow: var(--shadow);
+}
+
+.background {
+  transition: all 0.25s;
+}
+
+.background:hover {
+  padding: 1vmin 2vmin;
+  border-radius: 5px;
+  background-color: var(--primary);
+}
+
+.color {
+  transition: all 0.25s;
+}
